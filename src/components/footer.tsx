@@ -166,18 +166,34 @@ const Footer: React.FC = () => (
         <p className="text-xs text-white/20">
           Atlanta Petroleum Equipment Company Inc.
         </p>
-        <p className="ft-mono text-xs tracking-wide">
-          Powered by{" "}
-          <a
-            href="https://orangelabs-neon.vercel.app"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="font-semibold transition-opacity hover:opacity-80"
-          >
-            <span style={{ color: "#FF6A00" }}>Orange</span>
-            <span className="text-white/40">Labs Dev.</span>
-          </a>
-        </p>
+        <a
+          href="https://northernware.ph"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Built by Northernware"
+          className="group ft-mono relative inline-flex items-center gap-2.5"
+        >
+          {/* Acid pulse dot */}
+          <span aria-hidden className="relative flex h-2.5 w-2.5 flex-shrink-0">
+            <span className="absolute inline-flex h-full w-full animate-ping bg-[#FF3800] opacity-40" />
+            <span className="relative inline-flex h-2.5 w-2.5 bg-[#FF3800] transition-transform duration-300 group-hover:scale-125" />
+          </span>
+          <span className="flex flex-col leading-[1.35]">
+            <span className="text-xs tracking-wide text-white/35 transition-colors duration-300 group-hover:text-white/60">
+              powered by{" "}
+              <span className="relative font-semibold text-white/85 transition-colors duration-300 group-hover:text-white">
+                northernware
+                <span
+                  aria-hidden
+                  className="absolute -bottom-px left-0 h-px w-0 bg-[#FF3800] transition-all duration-500 ease-out group-hover:w-full"
+                />
+              </span>
+            </span>
+            <span className="text-[11px] italic tracking-wide text-white/25 transition-colors duration-300 group-hover:text-white/45">
+              build superior software.
+            </span>
+          </span>
+        </a>
       </div>
     </div>
   </footer>
